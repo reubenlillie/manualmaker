@@ -1,0 +1,16 @@
+/*
+Override these styles in your theme's style.css
+*/
+
+/* Previous/Next navigation links on single 'paragraph' pages */
+/* Align "previous" text left */
+.nav-previous {
+	float: left;
+}
+
+/* Align "next" text right */
+.nav-next {
+	border-top: none !important; /* for some themes (e.g., Twenty Sixteen) */
+	float:right;
+}
+
