@@ -1,117 +1,92 @@
-=== Manual Maker ===
-
+=== ManualMaker ===
 Contributors: reubenlillie
 Donate link: http://nazarene.org/give
-Tags: 0.1.0
-Requires at least: 4.6
-Tested up to: 4.7
+Tags: Church, Nazarene, manual, custom post type, custom taxonomy, extensible, pluggable
+Requires at least: 3.0.1
+Tested up to: 3.4
 Stable tag: 4.3
 License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+Make WordPress into your online manual. Make ManualMaker your own with extensions.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+_Make WordPress into your online manual._
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+**ManualMaker** was built for the [Church of the Nazarene][cotn-link], but it's not just for churches, and it's not just for manuals.
 
-A few notes about the sections above:
+[cotn-link]: http://nazarene.org/ "The International Church of the Nazarene website"
 
-*   "Contributors" is a comma separated list of wordpress.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
+Whether you use **ManualMaker** to write a simple chapter book, a doctoral thesis, or to manage a complex reference document complete with section headings, numbered paragraphs and subparagraphs, indexes, or even more features, **ManualMaker** may be able to help make making it happen much . . . _much_ easier.
 
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
+_Make ManualMaker your own with extensions._
 
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+If **ManualMaker** can't make it happen out of the box, then _let's think outside it_ because **ManualMaker** is made to be [extended][extend] so you can make sure that it can make whatever it is that you want to make with it.
+
+[extend]: https://developer.wordpress.org/plugins/hooks/custom-hooks/ "Learn more about Custom Hooks in the WordPress Plugin Handbook"
+
+= Why This Plugin Exists =
+
+**ManualMaker** was originally developed to optimize the oversight, translation, publications, and distribution of the [_Manual_ of the Church of the Nazarene][manual-link] by the Office of the General Secretary and the _Manual_ Editing Committee under the direction of the Board of General Superintendents (cf. _Manual_ 318, 902.4).
+
+The _Manual_ has been our official agreed-upon statement of faith, practice, and polity for over 100 years. It's revised and re-translated every four years by our General Assembly, and it's used every day by Nazarenes around the world—currently in 160 world areas.
+
+A print-first approach has served us well. The fundamental flaw of such an approach, however, is that it primarily relies upon presentation techniques like typesetting and cross-referencing to enhance the user experience. 
+
+Not only can a new web-based database system utilize these features, but WordPress and **ManualMaker** can also _get our eyes back on the text and out of the index_ by building in deeper functionality for searching, linking, translation, and distribution.
+
+_The printed editions are not going anywhere. We'll still print them. They'll just be made from our online WordPress database instead of local installations of proprietary word-processing software._
+
+[manual-link]: http://nazarene.org/organization/general-secretary/manual/ "Learn more about the Manual from the Office of the General Secretary"
+
+If you're reading this, chances are you're involved with the _Manual_ or a project like it.
+
+= How It Works =
+
+**ManualMaker** makes the _Manual_ in much the same way WordPress makes blogging platforms.
+
+_Custom Post Types and Taxonomies_
+
+**ManualMaker** creates a _hierarchical custom post type_ (**Paragraphs**, like Pages) with two (2) _custom taxonomies_ (**Sections**, which are hierarchical like Categories, **Index Locators**, which are flat like Tags).
+
+_Custom Templates_
+
+**ManualMaker** comes with basic template files which include custom queries to display the paragraphs, sections, and indexes according to how the paragraphs are ordered, instead of, say, by publication date like WordPress posts.
+
+Each template is chock-full of custom [extensible hooks][extend], so you can more deeply integrate **ManualMaker** with your plugins and themes.
+
+= How You Can Help =
+
+_Contribute as you're able._
+
+* You can support the Church of the Nazarene Information Technology team and the Office of the General Secretary by [giving online](http://nazarene.org/give "Give back to ManualMaker through the Church of the Nazarene"). When the Church can fulfill its [mission](http://nazarene.org/mission "The mission of the Church of the Nazarene is to make Christlike disciples in the nations"), we fulfill ours.
+
+* If you can write clearly, then we can always use your help with the [documentation and guides][wiki].
+
+[wiki]: http://github.com/reubenlillie/manualmaker/wiki "ManualMaker wiki on GitHub"
+
+* If you can code, then you're welcome to help us maintain, extend, and translate **ManualMaker** on [GitHub](http://github.com/reubenlillie/manualmaker.git "ManualMaker on GitHub").
+
+### License
+
+ManualMaker is licensed under the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html/ "GNU General Public License 2.0 or later"), version 2 or later.
+
+&copy; 2016 [Reuben L. Lillie](https://reubenlillie.com/about/ "About Reuben")
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
-1. Use the Settings->Plugin Name screen to configure the plugin
-1. (Make your instructions match the desired user flow for activating and installing your plugin. Include any steps that might be needed for explanatory purposes)
-
+1. Upload `manualmaker.zip` to your `/wp-content/plugins/` directory
+1. Activate ManualMaker through WordPress 'Plugins' menu
+1. Place `add_action('plugin_name_hook');` in your theme's `functions.php` or plugin files
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Is there documentation on **ManualMaker**? =
 
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+**Yes!** Read and contribute to our [wiki on GitHub][wiki].
 
 == Changelog ==
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
-
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
-
-== Upgrade Notice ==
-
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
+= 0.1.0 = 
+Initial commit to GitHub
