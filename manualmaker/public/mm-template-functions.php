@@ -731,14 +731,14 @@ function action_mm_paragraph_navigation( $args ) {
 	// Parse incoming $args into an array and merge it with $defaults
 	$args = wp_parse_args( $args, $defaults );
 
-	if ( is_single( 'paragraph' ) ) {
+	/**
+	 * Runs before returning `the_post_navigation`.
+	 *
+	 * @since 0.1.0
+	 */
+	do_action( 'do_before_action_mm_paragraph_navigation' );
 
-		/**
-		 * Runs before returning `the_post_navigation`.
-		 *
-		 * @since 0.1.0
-		 */
-		do_action( 'do_before_action_mm_paragraph_navigation' );
+	if ( is_single( 'paragraph' ) ) {
 
 		/**
 		 * Allows plugins and themes to override array parameters.
@@ -747,18 +747,18 @@ function action_mm_paragraph_navigation( $args ) {
 		 */
 		return apply_filters( 'apply_to_action_mm_paragraph_navigation', $args );
 
-		/**
-		 * Runs after returning `the_post_navigation`.
-		 *
-		 * @since 0.1.0
-		 */
-		do_action( 'do_after_action_mm_paragraph_navigation' );
-
 	} // if
 
 	else {
 			return;
 	}
+
+	/**
+	 * Runs after returning `the_post_navigation`.
+	 *
+	 * @since 0.1.0
+	 */
+	do_action( 'do_after_action_mm_paragraph_navigation' );
 
 } // action_mm_paragraph_navigation()
 
@@ -797,17 +797,17 @@ function action_mm_paragraphs_navigation( $args ) {
 	// Parse incoming $args into an array and merge it with $defaults
 	$args = wp_parse_args( $args, $defaults );
 
+	/**
+	 * Runs before returning `the_posts_navigation`.
+	 *
+	 * @since 0.1.0
+	 */
+	do_action( 'do_before_action_mm_paragraphs_navigation' );
+
 	if( is_post_type_archive( 'paragraph' )
 		|| is_tax( array( 'section', 'index_locator' ) )
 		|| is_search()
 	) {
-
-		/**
-		 * Runs before returning `the_posts_navigation`.
-		 *
-		 * @since 0.1.0
-		 */
-		do_action( 'do_before_action_mm_paragraphs_navigation' );
 
 		/**
 		 * Allows plugins and themes to override array parameters.
@@ -816,14 +816,14 @@ function action_mm_paragraphs_navigation( $args ) {
 		 */
 		return apply_filters( 'apply_to_action_mm_paragraphs_navigation', $args );
 
-		/**
-		 * Runs after returning `the_posts_navigation`.
-		 *
-		 * @since 0.1.0
-		 */
-		do_action( 'do_after_action_mm_paragraphs_navigation' );
-
 	} // if
+
+	/**
+	 * Runs after returning `the_posts_navigation`.
+	 *
+	 * @since 0.1.0
+	 */
+	do_action( 'do_after_action_mm_paragraphs_navigation' );
 
 } // action_mm_paragraphs_navigation()
 
