@@ -70,7 +70,9 @@ require_once( plugin_dir_path( __FILE__ ) . 'mm-template-functions.php' );
 	 *
 	 * 1. WP_Query
 	 * 2. Wrappers
-	 * 3. Headers
+	 * 3. Headers and Footers
+	 *   3.1 Headers
+	 *   3.2 Footers
 	 * 4. Titles
 	 * 5. Sidebar
 	 * 6. Previous/Next Navigation Links
@@ -134,7 +136,11 @@ require_once( plugin_dir_path( __FILE__ ) . 'mm-template-functions.php' );
 		'action_mm_site_content_wrapper_close', 10 );
 
 	/*
-	 * 3.0 Headers
+	 * 3.0 Headers and Footers
+	 */
+
+	/*
+	 * 3.1 Headers
 	 */
 
 	/**
@@ -166,6 +172,25 @@ require_once( plugin_dir_path( __FILE__ ) . 'mm-template-functions.php' );
 	 */
 	add_action( 'do_before_mm_archive_paragraph_loop_start',
 		'action_mm_archive_header_content', 20 );
+
+	/*
+	 * 3.2 Footers
+	 */
+
+	/**
+	 * Adds a footer after opening the article tag for paragraph content.
+	 *
+	 * Custom hooks available:
+	 *
+	 * - do_before_mm_paragraph_footer_content_open
+	 * - do_after_mm_paragraph_footer_content_open
+	 * - do_before_mm_paragraph_footer_content_close
+	 * - do_after_mm_paragraph_footer_content_close
+	 *
+	 * @since 0.1.0
+	 */
+	add_action( 'do_before_mm_paragraph_content_article_close',
+		'action_mm_paragraph_footer_content', 20 );
 
 	/*
 	 * 4.0 Titles
@@ -314,5 +339,5 @@ require_once( plugin_dir_path( __FILE__ ) . 'mm-template-functions.php' );
 	 *
 	 * @since 0.1.0
 	 */
-	add_action( 'do_before_mm_paragraph_content_article_close',
+	add_action( 'do_after_mm_paragraph_footer_content_open',
 		'action_mm_edit_post_link', 20 );
