@@ -312,7 +312,7 @@ function action_mm_site_content_wrapper_close( $args ) {
  *     Optional. An array of arguments.
  *
  *     @type string $class HTML class attribute for the header tag.
- *                         Default 'entry-title'.
+ *                         Default 'entry-header'.
  *     @type bool   $echo  Whether to echo the header or return.
  *                         Default TRUE.
  * }
@@ -327,7 +327,7 @@ function action_mm_site_content_wrapper_close( $args ) {
 function action_mm_paragraph_header_content( $args ) {
 
 	$defaults = array(
-		'class' => 'entry-title',
+		'class' => 'entry-header',
 		'echo'  => TRUE
 	);
 
