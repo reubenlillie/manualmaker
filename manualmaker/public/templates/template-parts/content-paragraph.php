@@ -66,7 +66,7 @@ do_action( 'do_before_mm_paragraph_content_article_open' );
 	 * @since 0.1.0
 	 *
 	 * @hooked action_mm_paragraph_content_wrapper_close - 10
-	 * @hooked mm_edit_post_link - 20
+	 * @hooked action_mm_paragraph_footer_content - 20
 	 */
 	do_action( 'do_before_mm_paragraph_content_article_close' );
 	?>
