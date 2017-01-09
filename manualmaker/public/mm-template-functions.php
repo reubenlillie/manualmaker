@@ -30,6 +30,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * 1.0  WP_Query
  * 2.0 Wrappers
  * 3.0 Headers
+ *   3.1 Headers
+ *   3.2 Footers
  * 4.0 Titles
  *   4.1 Paragraph Title
  *   4.2 Archive/Taxonomy Title and Description
@@ -297,7 +299,11 @@ function action_mm_site_content_wrapper_close( $args ) {
 } // action_mm_site_content_wrapper_close()
 
 /*
- * 3.0 Headers
+ * 3.0 Headers and Footers
+ */
+
+/*
+ * 3.1 Headers
  */
 
 /**
@@ -477,6 +483,98 @@ function action_mm_archive_header_content( $args ) {
 	do_action( 'do_after_mm_archive_header_content_close' );
 
 } // action_mm_paragraph_archive_header_content()
+
+/*
+ * Footers
+ */
+
+/**
+ * Adds a content footer on single 'paragraph' pages.
+ *
+ * @since 0.1.0
+ *
+ * @see wp_parse_args()
+ * @link https://developer.wordpress.org/reference/functions/wp_parse_args/
+ *
+ * @param array $args {
+ *     Optional. An array of arguments.
+ *
+ *     @type string $class HTML class attribute for the footer tag.
+ *                         Default 'entry-footer'.
+ *     @type bool   $echo  Whether to echo the footer or return.
+ *                         Default TRUE.
+ * }
+ * @param array  $args  {
+ *     Parsed $defaults.
+ * }
+ * @param string $open  The opening footer tag.
+ * @param string $close The closing footer tag.
+ * @return string The opening footer tag.
+ * @return string The closing footer tag.
+ */
+function action_mm_paragraph_footer_content( $args ) {
+
+	$defaults = array(
+		'class' => 'entry-footer',
+		'echo'  => TRUE
+	);
+
+	// Parse incoming $args into an array and merge it with $defaults
+	$args = wp_parse_args( $args, $defaults );
+
+	// Define opening footer tag HTML
+	$open = sprintf( '<footer class="%s">',
+				esc_attr( $args['class'] )
+			);
+
+	// Define closing footer tag HTML
+	$close = sprintf( '</footer><!-- .%s -->',
+				esc_attr( $args['class'] )
+			);
+
+	/**
+	 * Runs before the opening footer tag.
+	 *
+	 * @since 0.1.0
+	 */
+	do_action( 'do_before_mm_paragraph_footer_content_open' );
+
+	if ( ! $args['echo'] ) {
+		return $open;
+	} else {
+		echo $open;
+	} //else
+
+		/**
+		 * Runs after the opening footer tag.
+		 *
+		 * @since 0.1.0
+		 *
+		 * @hooked action_mm_edit_post_link - 10
+		 */
+		do_action( 'do_after_mm_paragraph_footer_content_open' );
+
+		/**
+		 * Runs before the closing footer tag.
+		 *
+		 * @since 0.1.0
+		 */
+		do_action( 'do_before_mm_paragraph_footer_content_close' );
+
+	if ( ! $args['echo'] ) {
+		return $close;
+	} else {
+		echo $close;
+	} //else
+
+	/**
+	 * Runs after the closing header tag.
+	 *
+	 * @since 0.1.0
+	 */
+	do_action( 'do_after_mm_paragraph_footer_content_close' );
+
+} // action_mm_paragraph_footer_content()
 
 /*
  * 4.0 Titles
@@ -842,7 +940,7 @@ function action_mm_paragraphs_navigation( $args ) {
 function action_mm_edit_post_link( $args ) {
 
 	$defaults = array(
-		'class' => 'entry-footer'
+		'class' => 'edit-link'
 	);
 
 	/**
@@ -857,8 +955,8 @@ function action_mm_edit_post_link( $args ) {
 
 	edit_post_link(
 		__( 'Edit', 'manualmaker' ),
-		'<footer class="' . esc_attr( $args['class'] ) . '">',
-		'</footer><!-- .' . esc_attr( $args['class'] ) . '-->'
+		'<span class="' . esc_attr( $args['class'] ) . '">',
+		'</span><!-- .' . esc_attr( $args['class'] ) . '-->'
 	);
 
 	/**
