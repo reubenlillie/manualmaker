@@ -18,7 +18,7 @@ If ManualMaker can't make it happen out of the box, then _let's think outside it
 
 ## Installation
 
-1. Upload ManualMaker's files (only the contents of `manualmaker/manualmaker/` directory from this repository) to your `/wp-content/plugins/manualmaker/` directory.
+1. Upload ManualMaker's files to your `/wp-content/plugins/manualmaker/` directory.
 2. Activate ManualMaker through the 'Plugins' screen in WordPress.
 
 ## Contributing
