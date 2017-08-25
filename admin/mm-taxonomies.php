@@ -27,6 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * and functions like a table of contents or chapters with subheadings.
  *
  * @since 0.1.0
+ * @since 0.1.1    Add REST API access
  *
  * @see register_taxonomy()
  * @link https://developer.wordpress.org/reference/functions/register_taxonomy/
@@ -70,11 +71,11 @@ function action_mm_register_section_tax() {
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
+		'show_in_rest'               => true,
 		'show_tagcloud'              => false,
 		'query_var'                  => 'section',
 		'rewrite'                    => $rewrites,
 		'update_count_callback'      => '_update_post_term_count',
-		'show_in_rest'               => true,
 	); // $args
 
 	/**
@@ -102,6 +103,7 @@ function action_mm_register_section_tax() {
  * that is non-hierarchical (like tags).
  *
  * @since 0.1.0
+ * @since 0.1.1    Add REST API access
  *
  * @see register_taxonomy()
  * @link https://developer.wordpress.org/reference/functions/register_taxonomy/
@@ -147,11 +149,11 @@ function action_mm_register_index_locator_tax() {
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
+		'show_in_rest'               => true,
 		'show_tagcloud'              => true,
 		'query_var'                  => 'index_locator',
 		'rewrite'                    => $rewrites,
 		'update_count_callback'      => '_update_post_term_count',
-		'show_in_rest'               => true,
 	); // $args
 
 	/**
