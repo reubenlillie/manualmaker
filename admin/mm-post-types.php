@@ -26,6 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * for organizing subparagraphs according to 'parent' relationships.
  *
  * @since 0.1.0
+ * @since 0.1.1    Added REST API access
  *
  * @see register_post_type()
  * @link https://developer.wordpress.org/reference/functions/register_post_type/
@@ -90,6 +91,7 @@ function action_mm_register_paragraph_cpt() {
 		'menu_icon'             => 'dashicons-editor-paragraph',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
+		'show_in_rest'          => true,
 		'can_export'            => true,
 		'has_archive'           => 'paragraph',
 		'exclude_from_search'   => false,
@@ -97,7 +99,6 @@ function action_mm_register_paragraph_cpt() {
 		'query_var'             => 'paragraph',
 		'rewrite'               => $rewrites,
 		'capability_type'       => 'page',
-		'show_in_rest'          => true,
 	); // $args
 
 	/**
