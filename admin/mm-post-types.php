@@ -48,7 +48,7 @@ function action_mm_register_paragraph_cpt() {
 		'edit_item'             => __( 'Edit Paragraph', 'manualmaker' ),
 		'update_item'           => __( 'Update Paragraph', 'manualmaker' ),
 		'view_item'             => __( 'View Paragraph', 'manualmaker' ),
-		'view_items'            => __( 'View Paragraphss', 'manualmaker' ),
+		'view_items'            => __( 'View Paragraphs', 'manualmaker' ),
 		'search_items'          => __( 'Search Paragraph', 'manualmaker' ),
 		'not_found'             => __( 'Not found', 'manualmaker' ),
 		'not_found_in_trash'    => __( 'Not found in Trash', 'manualmaker' ),
