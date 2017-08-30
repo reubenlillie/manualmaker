@@ -32,6 +32,6 @@ function mm_define_initial_constants() {
 	 *
 	 * @since 0.1.0
 	 */
-	define( 'MANUALMAKER_VERSION', '0.1.0' );
+	define( 'MANUALMAKER_VERSION', '0.1.1' );
 
 } // mm_define_initial_constants()
