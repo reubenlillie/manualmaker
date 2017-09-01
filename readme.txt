@@ -90,3 +90,6 @@ ManualMaker is licensed under the [GNU GPL](http://www.gnu.org/licenses/old-lice
 
 = 0.1.0 = 
 Initial commit to GitHub
+
+= 0.1.1 =
+Add REST API access to 'paragraph' post type and 'section' and 'index_locator' taxonomies
