@@ -12,8 +12,8 @@
  *
  * @package ManualMaker
  * @subpackage ManualMaker\main
- * @author Reuben L. Lillie <email@reubenlillie.com>
- * @copyright 2017 Reuben L. Lillie
+ * @author Reuben L. Lillie <rlillie@nazarene.org>
+ * @copyright 2017 Church of the Nazarene, Inc.
  * @license <http://www.gnu.org/licenses/gpl-2.0.txt> GNUv2 or later
  *
  * @wordpress-plugin
