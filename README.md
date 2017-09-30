@@ -33,16 +33,16 @@ If ManualMaker can't make it happen out of the box, then _let's think outside it
 
 * If you can code, then you're welcome to help us maintain, extend, and translate ManualMaker software. Check out our [current projects][Github projects], create an [issue][GitHub issues] to request a feature or report a bug, or make a [pull request][GitHub pull requests].
 
-[Github projects]: https://github.com/reubenlillie/manualmaker/projects   "Projects help to streamline the development process"
-[GitHub issues]: https://github.com/reubenlillie/manualmaker/issues       "Issues are used to track todos, bugs, feature requests, and more"
+[Github projects]: https://github.com/reubenlillie/manualmaker/projects "Projects help to streamline the development process"
+[GitHub issues]: https://github.com/reubenlillie/manualmaker/issues "Issues are used to track todos, bugs, feature requests, and more"
 [GitHub pull requests]: https://github.com/reubenlillie/manualmaker/pulls "Pull requests help you collaborate on code with other people."
 
 ## Credits
 
-Special thanks to David Wilson (General Secretary), Frank Moore (General Editor), Scott Stargel (Director of Global Nazarene Publishing), Jeffrey Beam (Director of Information Technology for the Church of the Nazarene Global Ministry Center), and the office of the [General Secretary of the Church of the Nazarene](http://nazarene.org/organization/general-secretary/general-secretary/).
+Special thanks to David Wilson (General Secretary), Frank Moore (General Editor), Scott Stargel (Director of Global Nazarene Publishing), Jeffrey Beam (Director of Information Technology for the Church of the Nazarene Global Ministry Center), the [_Manual_ Editing Committee](http://2013.manual.nazarene.org/index/manual-editing-committee/ "Read about the _Manual_ Editing Committee online"), and the [Office of the General Secretary](http://nazarene.org/organization/general-secretary/general-secretary/) of the Church of the Nazarene.
 
 ## License
 
-ManualMaker is licensed under the [GNU General Public License, version 2 or later](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
+ManualMaker is licensed under the [GNU General Public License, version 2 or later](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html "Read the GPLv2").
 
-&copy; 2017 [Reuben L. Lillie](https://reubenlillie.com/about/ "About Reuben")
+&copy; 2017 [Church of the Nazarene, Inc.](http://nazarene.org/ "Visit the official website of the International Church of the Nazarene")
