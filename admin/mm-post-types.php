@@ -87,11 +87,12 @@ function action_mm_register_paragraph_cpt() {
 		'public'                => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
-		'menu_position'         => 25, // below Comments
+		'menu_position'         => 50, // above first separator (60)
 		'menu_icon'             => 'dashicons-editor-paragraph',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'show_in_rest'          => true,
+		'rest_base'		=> 'paragraphs',
 		'can_export'            => true,
 		'has_archive'           => 'paragraph',
 		'exclude_from_search'   => false,
