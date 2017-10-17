@@ -45,4 +45,4 @@ Special thanks to David Wilson (General Secretary), Frank Moore (General Editor)
 
 ManualMaker is licensed under the [GNU General Public License, version 2 or later](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html "Read the GPLv2").
 
-&copy; 2017 [Church of the Nazarene, Inc.](http://nazarene.org/ "Visit the official website of the International Church of the Nazarene")
+&copy; 2017 [Church of the Nazarene, Inc.](http://nazarene.org/ "Visit the official website of the international Church of the Nazarene")
