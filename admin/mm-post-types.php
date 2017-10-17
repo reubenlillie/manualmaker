@@ -75,9 +75,10 @@ function action_mm_register_paragraph_cpt() {
 		'labels'                => $labels,
 		'supports'              => array(
 										'title',
-										'editor',
-										'revisions',
+                                        'editor',
+                                        'excerpt',
 										'page-attributes',
+										'revisions',
 									),
 		'taxonomies'            => array(
 										'section',
