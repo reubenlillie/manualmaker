@@ -16,6 +16,13 @@ If ManualMaker can't make it happen out of the box, then _let's think outside it
 
 [extend]: https://developer.wordpress.org/plugins/hooks/custom-hooks/ "Learn more about Custom Hooks in the WordPress Plugin Handbook"
 
+## Extension Projects
+
+ManualMaker already utilizes several extension projects itself:
+
+* [_MM Matter_](https://github.com/reubenlillie/mm-matter "Check out the MM Matter Repository")—Make matter for ManualMaker—front and back
+* [_MM Breadcrumbs_](https://github.com/reubenlillie/mm-breadcrumbs "Check out the MM Breadcrumbs Repository")—Make breadcrumbs for ManualMaker
+
 ## Installation
 
 1. Upload ManualMaker's files to your `/wp-content/plugins/manualmaker/` directory.
@@ -45,4 +52,4 @@ Special thanks to David Wilson (General Secretary), Frank Moore (General Editor)
 
 ManualMaker is licensed under the [GNU General Public License, version 2 or later](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html "Read the GPLv2").
 
-&copy; 2017 [Church of the Nazarene, Inc.](http://nazarene.org/ "Visit the official website of the international Church of the Nazarene")
+&copy; 2018 [The Church of the Nazarene, Inc.](http://nazarene.org/ "Visit the official website of the international Church of the Nazarene")
