@@ -1,5 +1,7 @@
 # ManualMaker
 
+**Note: This project is no longer actively maintained. It has been archived in favor of other solutions for publishing the _Manual_ electronically.**
+
 ## Description
 
 ### _Make WordPress into your online manual_
